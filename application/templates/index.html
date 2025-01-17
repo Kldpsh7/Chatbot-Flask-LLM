@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Chat Completion Demo</title>
+</head>
+<body>
+    <nav>
+        <select name="" id="models" class="models">
+        </select>
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="newChat" id="newChat">+ New Chat</div>
+            <p class="chatsTxt">chats</p>
+            <div class="prevChatsCont" id="prevChatsCont">
+            </div>
+        </div>
+
+    </nav>
+    <div class="container" id="container">
+        <div class="messages" id="messages">
+        </div>
+        <div class="inputs">
+            <button id="webSearch" class="webSearch"><i class="fa-solid fa-globe"></i></button>
+            
+            <textarea name="" id="textBox" class="textBox" placeholder="Enter your message..."></textarea>
+            <button id="sendBtn" class="sendBtn"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </div>
+    <div class="alert" id="alert">
+        <div class="closeAlert" id="closeAlert">X</div>
+       <p class="note">Note</p>
+        <p>---> You can easily use your own API provider to run this application; just update the pipeline.json file</p>
+        <p>---> The file/image attachment feature for the vision model has not been implemented yet.</p>
+        <a href="https://discord.gg/tRC7hNXfPH" class="discord" target="_blank"> Join Discord </a>
+    </div>
+    <div class="textCustomization">
+        <div class="colors"></div>
+        <div class="fontSize"></div>
+        <div class="background"></div>
+    </div>
+<script src="{{ url_for('static', filename='js/script.js') }}" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</body>
+</html>
