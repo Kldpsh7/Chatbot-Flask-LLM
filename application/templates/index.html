@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <title>Chat Completion Demo</title>
+   <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <title>LLM Chat</title>
 </head>
 <body>
     <nav>
@@ -39,13 +40,13 @@
             <button id="sendBtn" class="sendBtn"><i class="fa-solid fa-arrow-up"></i></button>
         </div>
     </div>
-    <div class="alert" id="alert">
+    <!-- <div class="alert" id="alert">
         <div class="closeAlert" id="closeAlert">X</div>
        <p class="note">Note</p>
-        <p>---> You can easily use your own API provider to run this application; just update the pipeline.json file</p>
-        <p>---> The file/image attachment feature for the vision model has not been implemented yet.</p>
+        <p> You can easily use your own API provider to run this application; just update the pipeline.json file</p>
+        <p> The file/image attachment feature for the vision model has not been implemented yet.</p>
         <a href="https://discord.gg/tRC7hNXfPH" class="discord" target="_blank"> Join Discord </a>
-    </div>
+    </div> -->
     <div class="textCustomization">
         <div class="colors"></div>
         <div class="fontSize"></div>

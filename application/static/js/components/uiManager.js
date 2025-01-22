@@ -49,9 +49,9 @@ class UIManager{
             this.webSearch = !this.webSearch;
             
         })
-        document.getElementById('closeAlert').onclick = ()=>{
-            document.getElementById('alert').style.display = 'none'
-        }
+        // document.getElementById('closeAlert').onclick = ()=>{
+        //     document.getElementById('alert').style.display = 'none'
+        // }
     }
     async send(){
         this.appendUserMsg();

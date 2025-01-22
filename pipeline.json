@@ -1,6 +1,19 @@
 {
     "api": {
         "models": {
+            "llama3.1": {
+                "type": "Text Generation",
+                "api_url": "http://10.128.0.10:11434/api/chat/",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "x-use-cache": "false",
+                    "config": {
+                        "comment": "This section runs Python code. It retrieves the API key from your environment using 'os'. You can use this for Authorization headers or replace it with another type of headers, like 'ApiKey'.",
+                        "Authorization": "Bearer os.environ.get('auth')"
+                }
+                }
+            },
+
             "Qwen2.5-Coder-32B-Instruct": {
                 "type": "Text Generation",
                 "api_url": "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions",
@@ -92,7 +105,6 @@
                 }
                 }
             }
-
 
         }
     },

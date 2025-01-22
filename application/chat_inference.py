@@ -56,6 +56,6 @@ class ChatInference:
         data = self.validate(data=data,user=user)
         if(data==400):
             return "Required Parameters are Missing!", 400
-        return self.chatCompletionAPI.make_request(json=data,url=data['base_url'],handle_stream=handle_stream,messages=data['messages'], headers=self.updateHeaders, webSearch=data['webSearch'])
+        return self.chatCompletionAPI.make_request(jsonData=data,url=data['base_url'],handle_stream=handle_stream,messages=data['messages'], headers=self.updateHeaders, webSearch=data['webSearch'])
 
         
